@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar d-flex p-3 px-5">
+            <div class="logo d-flex  gap-2">
+                <img src="./images/Storefront.png" alt="">
+                <h3 >NFT Marketplace</h3>
+            </div>
+
+            <ul id="navList" class="navLinks  d-flex align-items-center gap-4  ">
+                <li class="links"><a href="#">Marketplace</a></li>
+                <li class="links"><a href="#">Rankings</a></li>
+                <li class="links"><a href="#">Connect a wallet</a></li>
+                <li class="links"><button class="btn btn-primary"><img src="./images/User.png" alt=""> Sign Up</button></li>
+            </ul>
+
+            <div class="menu">
+                <img id="openMenu" src="./images/Burger Menu.png" alt="">
+                <i id="closeMenu" class="px-2 fa-solid fa-times  hideOption" ></i>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <section class="heroSection container-fluid ">
+        <div id="heroFlex" class="d-flex justify-content-between gap-1">
+            <div class="heroContent">
+                <h1 class="mainText">
+                    Discover digital <br> art & Collect NFTs
+                </h1>
+
+                <h5 class="mainText2">NFT marketplace UI created with Anima for Figma. Collect,  <br> buy and sell art from more than 20k NFT artists.</h5>
+                <div>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+
+                <div class="AdditionalInfo ">
+                    <div >
+                        <h3>   240k+ </h3>
+                        <h5>Total Sale</h5>
+                    </div>
+                    <div >
+                        <h3>   240k+ </h3>
+                        <h5>Total Sale</h5>
+                    </div>
+                    <div >
+                        <h3>   240k+ </h3>
+                        <h5>Total Sale</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="heroCard">
+                <div class="card">
+                    <img class="card-img-top" src="./images/Image Placeholder.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Space Walking</h5>
+                      <p class="card-text"> <img src="./images/Avatar.png" alt=""> Animakid</p>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="trendingSection"> 
+        <div id="trendingFlex" class="d-flex gap-2 flex-column">
+            <h3>Trending Collection</h3>
+            <h5>Checkout our weekly updated trending collection.</h5>
+
+            <div class="mt-4 trendingImages d-flex gap-5 justify-content-between">
+
+                <div class="collections d-flex gap-2 flex-column">
+                    <div class="firstGrp">
+                        <img src="./images/Primary Photo Placeholder.png" alt="">
+                    </div>
+                    <div class="secondGrp d-flex gap-3 justify-content-between">
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                    </div>
+                    <div class="thirdGrp">
+                        <h5>DSGN Animals</h5>
+                    </div>
+                    <div class="forthGrp">
+                        <p><img src="./images/Avatar.png" alt=""> MrFox</p>
+                    </div>
+                </div>
+                
+
+                <div class="collections d-flex gap-2 flex-column">
+                    <div class="firstGrp">
+                        <img src="./images/Primary Photo Placeholder.png" alt="">
+                    </div>
+                    <div class="secondGrp d-flex gap-3 justify-content-between">
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                    </div>
+                    <div class="thirdGrp">
+                        <h5>DSGN Animals</h5>
+                    </div>
+                    <div class="forthGrp">
+                        <p><img src="./images/Avatar.png" alt=""> MrFox</p>
+                    </div>
+                </div>
+                
+
+                <div class="collections d-flex gap-2 flex-column">
+                    <div class="firstGrp">
+                        <img src="./images/Primary Photo Placeholder.png" alt="">
+                    </div>
+                    <div class="secondGrp d-flex gap-3 justify-content-between">
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                        <div class="sub1">
+                            <img src="./images/Secondary Photo Placeholder.png" alt="">
+                        </div>
+                    </div>
+                    <div class="thirdGrp">
+                        <h5>DSGN Animals</h5>
+                    </div>
+                    <div class="forthGrp">
+                        <p><img src="./images/Avatar.png" alt=""> MrFox</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="creatorSection">
+        <div id="creatorFlex" class="d-flex justify-content-between">
+            <div class="creatorContent">
+                <h3>Top creators</h3>
+                <h5>Checkout Top Rated Creators on the NFT Marketplace</h5>
+            </div>
+            <div class="createBtn">
+                <button class="btn btn-primary"><img src="./images/RocketLaunch.png" alt=""> View Rankings</button>
+            </div>
+        </div>
+
+        <div class="pt-3 allCreatorsCard d-flex flex-wrap justify-content-between">
+
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="no">1</div>
+                <div class="cardImage">
+                    <img class="card-img-top" src="./images/Asset 12 2.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Keepitreal</h5>
+                  <p class="card-text">Total Sales: 34.53 ETH</p>
+                 
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="categorySection">
+        <h3>Browse Categories</h3>
+        <div class="pt-3 allCategoryCard d-flex flex-wrap justify-content-between">
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/Category Icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="weeklySection">
+
+
+        <div id="weeklyFlex"  class="d-flex p-5 justify-content-around flex-wrap">
+            <div>
+                <img class="weeklyImage" src="./images/Photo.png" alt="">
+            </div>
+            <div class="pt-5 d-flex flex-column gap-3">
+                <h3>Join our weekly digest</h3>
+                <p>Get exclusive promotions & updates <br> straight to your inbox.</p>
+                <div>
+                    <input class="inputEmail" type="text" placeholder="Enter your email here"><button class="joinBtn btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function(){
+        $("#openMenu").click(function(){
+            $("#openMenu").addClass('hideOption');
+            $("#closeMenu").removeClass('hideOption');
+            $("#closeMenu").addClass('showOption');
+            $("#navList").addClass('active');
+
+        });
+
+        $("#closeMenu").click(function(){
+            $("#openMenu").removeClass('hideOption');
+            $("#closeMenu").removeClass('showOption');
+            $("#closeMenu").addClass('hideOption');
+            $("#navList").removeClass('active');
+        });
+
+        $(".links").click(function(){
+            $("#openMenu").removeClass('hideOption');
+            $("#closeMenu").removeClass('showOption');
+            $("#closeMenu").addClass('hideOption');
+            $("#navList").removeClass('active');
+        });
+        })
+
+        window.onscroll = function() {
+    var distanceScrolled = document.documentElement.scrollTop;
+    if (distanceScrolled > 112) {
+        $("header").addClass('showdowHeader');
+    }else {
+        $("header").removeClass('showdowHeader');
+    }
+}
+
+    </script>
+
+</html>
+

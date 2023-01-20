@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    word-break: break-all;
+    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+li{
+    list-style: none;
+}
+
+.blueText{
+ color: #4F9CF9 !important;
+}
+
+
+.mobile{
+    display: none;
+}
+
+
+#menu{
+    font-size: large;
+    color: #4F9CF9;
+}
+
+.btn-primary{
+    background-color: #4F9CF9;
+}
+
+#loginBtn{
+    background-color: #FFE492 ;
+    color: #043873;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+    align-content: center;
+    padding: 20px 0px;
+}
+
+.navList{
+    display: flex;
+    gap: 20px;
+    align-items: center !important;
+    text-align: center;
+    align-content: center;
+}
+
+
+/* HeroSection */
+
+.heroSection{
+    padding-top: 50px;
+    display:flex;
+    /* flex-wrap: wrap; */
+}
+.heroSection .contains{
+    padding-top: 50px;
+    color: #4F9CF9 !important;
+}
+
+/* workSection */
+
+.workSection{
+    padding-top: 50px;
+    display:flex;
+    /* flex-wrap: wrap; */
+}
+.workSection .contains{
+    padding-left: 73px;
+    padding-top: 50px;
+    color: #4F9CF9 !important;
+}
+
+
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer .contain{
+    flex: 0 0 calc(100%/5 - 17px) ;
+}
+
+
+.bottomFooter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #2E4E73;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomFooter .footerList{
+   
+    display: flex;
+    gap: 20px;
+
+}
+
+.mycontainer{
+    background-color: #043873;
+}
+
+.container{
+    max-width: 100% !important;
+    padding: 10px 150px !important;
+}

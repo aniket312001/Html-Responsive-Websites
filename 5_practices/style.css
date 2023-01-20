@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+ul, li, a{
+    text-align: none;
+    list-style: none;
+}
+
+i{
+    cursor: pointer;
+}
+
+body{
+    position: relative;
+}
+
+.navbar{
+
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    /* position: sticky;
+    top: 0; */
+    background-color: white;
+}
+
+.navbar .nav-grp{
+    display: flex;
+    gap: 100px;
+}
+
+.navbar .nav-links, .navbar .logo{
+    cursor: pointer;
+}
+
+.Hamburger,.closeBar{
+    display: none;
+}
+
+
+
+
+.main{
+    height: calc(100vh - 68px);
+    background-color: #ec9045;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+
+.main .bgShape img{
+    height: calc(100vh - 68px);
+    object-fit: contain;
+    position:absolute;
+    right: 0;
+    z-index: 2;
+    /* background:url(./images/BG\ Shape.svg); */
+}
+
+
+.heroSection{
+    z-index: 200!important;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    padding-top: 100px;
+}
+
+.heroSection .contain{
+    padding-top: 150px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroSection .contain h1{
+    font-size:55px !important;
+}
+
+.heroSection .contain h5{
+    font-size:25px !important;
+}
+
+.allLogos{
+    padding-top:50px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    background-color: #01847F;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.heroSection .photo{
+    z-index: 55;
+}
+
+
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
+
+.searchbar{
+    position: absolute;
+    top: -55px;
+    transition: all 0.6s ease;
+    right: 4%;
+    z-index: 50;
+    width: 290px;
+    padding: 10px  15px;
+}
+.searchbar-active{
+    position: absolute;
+    top:72px;
+    right: 4%;
+    z-index: 50;
+    width: 290px;
+    padding: 10px  15px;
+    transition: all 0.6s ease;
+}
+
+
+@media screen and (max-width: 880px) {
+
+    .desktop{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+    
+        
+    .Hamburger{
+        display: block !important;
+    }
+    
+    .Hamburger-block{
+        display: none !important;
+    }
+
+    .closeBar-active{
+        display: block !important;
+    }
+
+    .navbar{
+
+    }
+
+    .navbar .nav-grp{
+       position: absolute;
+        right: -3333px;
+        display: block;
+
+        width: 100%;
+        top:69px;
+        z-index: 100 !important;
+        background-color: whitesmoke !important;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 9px 50px;
+        padding-top: 26px;
+        height:  calc(100vh - 69px);
+        transition: all 1s ease;
+    }
+
+   
+    
+    .navbar .active{ 
+        position: absolute;
+        right: 0;
+        transition: all 0.6s ease
+    }
+    .main{
+        height: calc(100vh - 74px);
+    }
+
+    
+    .main .bgShape img{
+        height: calc(100vh - 74px);
+    }
+
+
+    .heroSection .contain{
+        padding-top:10px !important ;
+    }
+    .heroSection, .heroSection .contain{
+       padding-top:5px ;
+       z-index: 50;
+    }
+
+    .mobile-Search{
+        width: 290px;
+        padding: 10px  15px;
+    }
+}

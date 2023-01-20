@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    padding-left: 0px !important;
+    margin: 0;
+}
+
+
+.inner-page{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+header{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding:  10px 30px;
+    
+
+}
+
+header .logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .user{
+    display: flex;   
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+header .user .userImage img{
+    height: 32px ;
+    object-fit: contain;
+}   
+
+
+
+.main-page{
+    display: flex;
+  
+}
+
+
+.sidebar{
+    flex-basis: 220px;
+    background-color: bisque;
+    height: calc(100vh - 75px);
+
+    border-bottom-right-radius: 20%;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(158, 157, 157);
+    cursor: pointer;
+}
+.sidebar ul .active{
+    background-color: burlywood;
+}
+
+.sidebar ul li:hover{
+    background-color: burlywood;
+}
+
+
+.rightSide{
+    flex-basis: calc(100% - 220px);
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+    padding: 5px;
+    overflow-x: hidden;
+}
+
+
+.Hamburger,.sidebarLogo,.closeSideBar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .Hamburger {
+        display: block;
+        padding-right:15px;
+    }
+    
+    .closeSideBar{
+        display: block;
+        padding-right:15px;
+        position: absolute;
+        right: 5px;
+        top: 15px;
+        cursor: pointer;
+    }
+
+
+    .sidebarLogo{
+        display: block;
+        padding:20px;
+    }
+    .sidebar{
+        position:absolute;
+        left: -155px;
+        top: 0;
+        transition: all 0.5s ease;
+        height: 100vh;
+    }
+
+
+    .sidebar-active{
+
+        transition: all 0.5s ease;
+        left: 0;
+        width: 100%;
+        top: 0;
+        height: 100vh;
+        border-bottom-right-radius: 0%;
+        padding-top: 55px;
+    }
+
+    .sidebar ul li{
+        display: flex;
+        justify-content: start;
+        padding: 20px 20px;
+        border-bottom: 1px solid rgb(158, 157, 157);
+        cursor: pointer;
+    }
+
+
+
+    .rightSide{
+        flex-basis: calc(100% - 0px);
+    }
+
+    header .user .userName{
+        display: none;
+    }
+
+}

@@ -1,0 +1,78 @@
+@media screen and (max-width: 1000px) {
+
+    .mobile{
+        display:block;
+    }
+
+    .container{
+        /* padding: 0 !important; */
+    }
+
+    .navList{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        position:fixed ;
+        top: 0px;
+        left: -2001px !important;
+        gap: 20px;
+        justify-content: start;
+        width: 100%;
+        background-color: antiquewhite;
+        height: 100vh;
+        transition: all 0.5s ease;
+    }
+
+    .navList.active{
+        left: -35px !important;
+    }
+
+    .navList li{
+        
+    }
+
+    #closeMenu{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+
+    .heroSection{
+        padding-top: 20px;
+        display:flex;
+        flex-wrap: wrap-reverse;
+    }
+    .heroSection .contains{
+        padding-top: 20px;
+        color: #4F9CF9 !important;
+    }
+    .workSection{
+        padding-top: 20px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .workSection .contains{
+        padding-left: 0px;
+        padding-top: 20px;
+        color: #4F9CF9 !important;
+    }
+
+
+    .footer{
+        flex-direction: column;
+    }
+    .bottomFooter{
+        flex-direction: column;
+    }
+    .bottomFooter .footerList{
+        flex-direction: column;
+    }
+
+    
+.container{
+    max-width: 100% !important;
+    padding: 10px 20px !important;
+}
+
+}

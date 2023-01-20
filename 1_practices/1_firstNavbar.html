@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background-color: lightblue;
+            position: sticky;    
+            top: 0;
+        }
+
+        ul{
+            display: flex;
+            justify-content:space-around;
+            list-style: none;
+        }
+        li{
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .pointer{
+            cursor: pointer;
+        }
+
+        .mobile{
+            display: none;
+        }
+
+        .desktop{
+            /* display: block; */
+        
+        }
+
+        .fa-solid{
+            display: none;
+        }
+       
+        .only-Mobile{
+            display: none;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            position: sticky;
+            width: 100%;
+            bottom: 0;
+        }
+        
+
+        @media screen and (max-width: 480px) {
+            .only-Mobile{
+                display: block;
+                position: absolute;
+                left:35px;
+                top: 25px;
+            }
+            .active-icon{
+                display: block;
+            }
+            nav{
+          
+                padding-right: 10px !important;
+            }
+
+            .mobile{
+                display: block;
+            }
+            
+            .desktop{
+                display: block;
+                position: absolute;
+                left: -200px;
+                top: 0;
+                width: 200px;
+                transition: all 0.5s ;
+                width: 100%;
+                height: 100vh;
+                z-index: 50;
+            }
+
+            .desktop-active{
+                display: block;
+                position: absolute;
+                /* width: 400px; */
+                width: 100%;
+                height: 100vh;
+                left: 0px;
+                top: 0;
+                background-color: antiquewhite;
+                
+                overflow: hidden;
+                transition: all 0.5s ;
+            }
+
+            .firstLi{
+                padding-top: 100px;
+            }
+            li{
+                padding: 10px 35px;
+            }
+
+            #myclick2{
+                position: absolute;
+                right:15px;
+                top: 25px;
+
+            }
+
+            footer{
+                position: sticky;
+                z-index: 0;
+            }
+
+            .hideFooter{
+                display: none;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+
+        <div>
+            <a href="#">LOGO</a>
+        </div>
+
+        <ul class="desktop">
+            <div class="only-Mobile">
+                <a href="">LOGO</a>
+            </div>
+            <li class="firstLi"> <a href="#">Home</a> </li>
+            <li><a href="#">About</a> </li>
+            <li><a href="#">Service</a> </li>
+            <li><a href="#"> Contact Us</a></li>
+            <i id="myclick2" class="fa-solid fa-x pointer" ></i>
+            
+        </ul>
+
+        <div class="mobile">
+            <i id="myclick" class="fa-solid fa-bars pointer active-icon " ></i>
+        
+        </div>
+    </nav>
+
+
+    <section class="mainSection">
+
+        <div >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit esse assumenda, ea rem debitis accusamus officiis ex molestias, ipsa asperiores est voluptas inventore illum ullam soluta fugit eligendi qui enim architecto adipisci. Commodi dolores sint possimus officiis quidem, architecto dolorem pariatur eius praesentium molestias maxime! Nobis consequatur, dignissimos aspernatur commodi laborum, ab aliquid labore error recusandae earum dolore nulla voluptas at officiis, magni blanditiis odio! Officiis fugit nobis incidunt nostrum. Rem ab nihil velit blanditiis. Laborum placeat ea odit esse praesentium aliquid nam repellendus alias, obcaecati amet dolorum qui blanditiis hic voluptatibus illo temporibus nemo magni suscipit exercitationem tempore expedita. Quam cupiditate veritatis delectus ea eveniet? Consequatur, voluptatem dolor quam enim culpa earum dolore, nihil delectus officia fugit natus. Culpa doloribus sapiente dolorum fuga odio excepturi, deleniti a eum impedit iusto alias aut totam officia maiores nostrum? Quis sint expedita, ab porro repellendus hic laudantium possimus totam impedit inventore, veniam facilis ea, quas quam iusto ratione minus pariatur ad modi consequuntur numquam repellat? Ratione beatae consectetur fuga quisquam, quis explicabo sed eligendi quia? Sed, dolorum quia minus aliquam consequatur rerum obcaecati! Tempore dignissimos harum quis ullam quod enim id, iste sapiente non. Dolorum sunt earum labore atque, ea excepturi? Id unde ut dignissimos distinctio neque quas culpa dolore at, corporis odio magni temporibus sit nobis soluta non laudantium dolorum aliquid voluptatem necessitatibus itaque sed repellendus! Culpa dicta, veniam cupiditate ducimus maxime blanditiis? Quia optio veritatis vitae eaque molestiae impedit? Placeat impedit ab mollitia tenetur nobis, magni voluptates sunt, at consequatur magnam ea a facere repudiandae quasi quaerat voluptate officia temporibus et. Quia facere dolores, harum autem et, at esse voluptas vitae eaque quasi hic placeat optio consequatur expedita ipsum! Ullam distinctio, obcaecati, ipsum, veniam perferendis optio iusto animi rem tempore similique temporibus! Dolorem quam explicabo commodi debitis amet laudantium vitae, nesciunt id autem dolore? Pariatur dolore cumque omnis sapiente unde saepe, consequuntur a consequatur, obcaecati expedita ullam ab, possimus fugit doloribus at facere repellendus. Ullam ducimus, harum quae possimus ea rerum neque? Quidem reprehenderit vero atque sunt architecto sint culpa doloribus praesentium itaque eum, a aspernatur cupiditate inventore blanditiis ipsum similique? Dolorum molestiae rem assumenda magni alias fugit, quisquam reiciendis vel nostrum recusandae! Quam, ullam error, ratione adipisci laudantium est eligendi in, tempore quo sequi ea facilis aliquam deserunt deleniti veritatis explicabo quas dolorem quibusdam rerum quos provident! Esse explicabo beatae minima nulla expedita, nobis qui atque incidunt sunt sequi omnis enim at porro est corporis aut! Accusamus sit ipsa deserunt incidunt impedit distinctio officiis, adipisci delectus odit expedita eligendi unde suscipit quisquam, ad cupiditate ipsum illum quos tenetur vitae. Totam qui laborum soluta consectetur fuga eligendi, pariatur ratione repellendus aliquam! Nesciunt deleniti atque vero aperiam numquam dignissimos aliquid expedita accusamus, provident, corporis ullam adipisci veritatis similique minus eligendi! Qui dolore maxime voluptatum quaerat numquam cum praesentium laudantium nemo illo eveniet! Cumque rem laudantium amet assumenda saepe aliquam iste illum dolorum nobis cum beatae, provident doloribus ab corrupti non, necessitatibus aperiam pariatur ut inventore exercitationem quis velit. Consequatur, explicabo ad!
+        </div>
+
+        <div >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit esse assumenda, ea rem debitis accusamus officiis ex molestias, ipsa asperiores est voluptas inventore illum ullam soluta fugit eligendi qui enim architecto adipisci. Commodi dolores sint possimus officiis quidem, architecto dolorem pariatur eius praesentium molestias maxime! Nobis consequatur, dignissimos aspernatur commodi laborum, ab aliquid labore error recusandae earum dolore nulla voluptas at officiis, magni blanditiis odio! Officiis fugit nobis incidunt nostrum. Rem ab nihil velit blanditiis. Laborum placeat ea odit esse praesentium aliquid nam repellendus alias, obcaecati amet dolorum qui blanditiis hic voluptatibus illo temporibus nemo magni suscipit exercitationem tempore expedita. Quam cupiditate veritatis delectus ea eveniet? Consequatur, voluptatem dolor quam enim culpa earum dolore, nihil delectus officia fugit natus. Culpa doloribus sapiente dolorum fuga odio excepturi, deleniti a eum impedit iusto alias aut totam officia maiores nostrum? Quis sint expedita, ab porro repellendus hic laudantium possimus totam impedit inventore, veniam facilis ea, quas quam iusto ratione minus pariatur ad modi consequuntur numquam repellat? Ratione beatae consectetur fuga quisquam, quis explicabo sed eligendi quia? Sed, dolorum quia minus aliquam consequatur rerum obcaecati! Tempore dignissimos harum quis ullam quod enim id, iste sapiente non. Dolorum sunt earum labore atque, ea excepturi? Id unde ut dignissimos distinctio neque quas culpa dolore at, corporis odio magni temporibus sit nobis soluta non laudantium dolorum aliquid voluptatem necessitatibus itaque sed repellendus! Culpa dicta, veniam cupiditate ducimus maxime blanditiis? Quia optio veritatis vitae eaque molestiae impedit? Placeat impedit ab mollitia tenetur nobis, magni voluptates sunt, at consequatur magnam ea a facere repudiandae quasi quaerat voluptate officia temporibus et. Quia facere dolores, harum autem et, at esse voluptas vitae eaque quasi hic placeat optio consequatur expedita ipsum! Ullam distinctio, obcaecati, ipsum, veniam perferendis optio iusto animi rem tempore similique temporibus! Dolorem quam explicabo commodi debitis amet laudantium vitae, nesciunt id autem dolore? Pariatur dolore cumque omnis sapiente unde saepe, consequuntur a consequatur, obcaecati expedita ullam ab, possimus fugit doloribus at facere repellendus. Ullam ducimus, harum quae possimus ea rerum neque? Quidem reprehenderit vero atque sunt architecto sint culpa doloribus praesentium itaque eum, a aspernatur cupiditate inventore blanditiis ipsum similique? Dolorum molestiae rem assumenda magni alias fugit, quisquam reiciendis vel nostrum recusandae! Quam, ullam error, ratione adipisci laudantium est eligendi in, tempore quo sequi ea facilis aliquam deserunt deleniti veritatis explicabo quas dolorem quibusdam rerum quos provident! Esse explicabo beatae minima nulla expedita, nobis qui atque incidunt sunt sequi omnis enim at porro est corporis aut! Accusamus sit ipsa deserunt incidunt impedit distinctio officiis, adipisci delectus odit expedita eligendi unde suscipit quisquam, ad cupiditate ipsum illum quos tenetur vitae. Totam qui laborum soluta consectetur fuga eligendi, pariatur ratione repellendus aliquam! Nesciunt deleniti atque vero aperiam numquam dignissimos aliquid expedita accusamus, provident, corporis ullam adipisci veritatis similique minus eligendi! Qui dolore maxime voluptatum quaerat numquam cum praesentium laudantium nemo illo eveniet! Cumque rem laudantium amet assumenda saepe aliquam iste illum dolorum nobis cum beatae, provident doloribus ab corrupti non, necessitatibus aperiam pariatur ut inventore exercitationem quis velit. Consequatur, explicabo ad!
+        </div>
+
+        <div >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit esse assumenda, ea rem debitis accusamus officiis ex molestias, ipsa asperiores est voluptas inventore illum ullam soluta fugit eligendi qui enim architecto adipisci. Commodi dolores sint possimus officiis quidem, architecto dolorem pariatur eius praesentium molestias maxime! Nobis consequatur, dignissimos aspernatur commodi laborum, ab aliquid labore error recusandae earum dolore nulla voluptas at officiis, magni blanditiis odio! Officiis fugit nobis incidunt nostrum. Rem ab nihil velit blanditiis. Laborum placeat ea odit esse praesentium aliquid nam repellendus alias, obcaecati amet dolorum qui blanditiis hic voluptatibus illo temporibus nemo magni suscipit exercitationem tempore expedita. Quam cupiditate veritatis delectus ea eveniet? Consequatur, voluptatem dolor quam enim culpa earum dolore, nihil delectus officia fugit natus. Culpa doloribus sapiente dolorum fuga odio excepturi, deleniti a eum impedit iusto alias aut totam officia maiores nostrum? Quis sint expedita, ab porro repellendus hic laudantium possimus totam impedit inventore, veniam facilis ea, quas quam iusto ratione minus pariatur ad modi consequuntur numquam repellat? Ratione beatae consectetur fuga quisquam, quis explicabo sed eligendi quia? Sed, dolorum quia minus aliquam consequatur rerum obcaecati! Tempore dignissimos harum quis ullam quod enim id, iste sapiente non. Dolorum sunt earum labore atque, ea excepturi? Id unde ut dignissimos distinctio neque quas culpa dolore at, corporis odio magni temporibus sit nobis soluta non laudantium dolorum aliquid voluptatem necessitatibus itaque sed repellendus! Culpa dicta, veniam cupiditate ducimus maxime blanditiis? Quia optio veritatis vitae eaque molestiae impedit? Placeat impedit ab mollitia tenetur nobis, magni voluptates sunt, at consequatur magnam ea a facere repudiandae quasi quaerat voluptate officia temporibus et. Quia facere dolores, harum autem et, at esse voluptas vitae eaque quasi hic placeat optio consequatur expedita ipsum! Ullam distinctio, obcaecati, ipsum, veniam perferendis optio iusto animi rem tempore similique temporibus! Dolorem quam explicabo commodi debitis amet laudantium vitae, nesciunt id autem dolore? Pariatur dolore cumque omnis sapiente unde saepe, consequuntur a consequatur, obcaecati expedita ullam ab, possimus fugit doloribus at facere repellendus. Ullam ducimus, harum quae possimus ea rerum neque? Quidem reprehenderit vero atque sunt architecto sint culpa doloribus praesentium itaque eum, a aspernatur cupiditate inventore blanditiis ipsum similique? Dolorum molestiae rem assumenda magni alias fugit, quisquam reiciendis vel nostrum recusandae! Quam, ullam error, ratione adipisci laudantium est eligendi in, tempore quo sequi ea facilis aliquam deserunt deleniti veritatis explicabo quas dolorem quibusdam rerum quos provident! Esse explicabo beatae minima nulla expedita, nobis qui atque incidunt sunt sequi omnis enim at porro est corporis aut! Accusamus sit ipsa deserunt incidunt impedit distinctio officiis, adipisci delectus odit expedita eligendi unde suscipit quisquam, ad cupiditate ipsum illum quos tenetur vitae. Totam qui laborum soluta consectetur fuga eligendi, pariatur ratione repellendus aliquam! Nesciunt deleniti atque vero aperiam numquam dignissimos aliquid expedita accusamus, provident, corporis ullam adipisci veritatis similique minus eligendi! Qui dolore maxime voluptatum quaerat numquam cum praesentium laudantium nemo illo eveniet! Cumque rem laudantium amet assumenda saepe aliquam iste illum dolorum nobis cum beatae, provident doloribus ab corrupti non, necessitatibus aperiam pariatur ut inventore exercitationem quis velit. Consequatur, explicabo ad!
+        </div>
+
+    </section>
+
+
+    <footer class="">
+        <div>All Copyright reserved @2023</div>
+    </footer>
+
+
+
+
+    <script>
+        $(document).ready(function(){
+          $("#myclick").click(function(){
+            $("ul").toggleClass('desktop desktop-active');
+            $("#myclick").removeClass('active-icon');
+            $("#myclick2").addClass('active-icon');
+            $("footer").addClass('hideFooter');
+          });
+
+          $("#myclick2").click(function(){
+            $("ul").toggleClass('desktop-active desktop');
+            $("#myclick").addClass('active-icon');
+            $("#myclick2").removeClass('active-icon');
+            $("footer").removeClass('hideFooter');
+
+          });
+       
+
+          $("a").click(function(){
+            $("ul").toggleClass('desktop-active desktop');
+            $("#myclick").addClass('active-icon');
+            $("#myclick2").removeClass('active-icon');
+            $("footer").removeClass('hideFooter');
+          });
+       
+        });
+    </script>
+
+
+</body>
+</html>

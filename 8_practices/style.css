@@ -1,0 +1,186 @@
+
+ul, li, a{
+    text-decoration: none !important;
+    list-style: none ;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+
+section{
+    background-color: #FCFAFF;
+}
+
+.navigation{
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+}
+
+
+
+.navlist1 , .navlist2{
+    display: flex;
+    gap: 30px;
+}
+
+
+.mobile{
+    display: none;
+}
+
+
+
+.heroSection{
+    background: url(./image/Background.png);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 90px 50px;
+    /* height: 70vh; */
+    position: relative;
+    overflow-x: hidden;
+}
+
+.heroSection .content{
+    z-index: 2;
+}
+
+
+.hero1{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.hero2{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hero3{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.hero4{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* logoSection */
+
+.logoSection{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 50px;
+}
+
+
+
+/* collectionSection */
+
+.collectionSection {
+    padding: 40px 20px;
+}
+
+.collectionSection .textContent{
+    text-align: center;
+}
+
+.collectionSection .cardCollection{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+}
+
+
+.collectionSection .cardCollection .singleCard{
+    flex: 0 0 calc(100%/3 - 64px) !important;
+    margin: 12px 15px;
+  
+}
+.collectionSection .cardCollection .singleCard img{
+    /* height: 150px; */
+    width: auto;
+}
+
+
+
+/* teamSection */
+
+.teamSection{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.teamSection .smallCards{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding: 20px 10px;
+    justify-content: center;
+}
+.teamSection .smallCards .singleCard{
+    flex: 0 0 calc(100%/4 - 64px) !important;
+    margin: 12px 15px;
+}
+
+
+
+/* testimonialSection */
+
+.testimonialSection{
+
+    padding: 20px 20px;
+    
+}
+
+
+.testimonialSection .testimoText{
+    text-align: center;
+}
+
+
+.testimonialSection .grp{
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding: 20px 10px;
+    justify-content: center;
+}
+
+
+.testimonialSection .grp .oneCard{ 
+    flex: 0 0 calc(100%/3 - 64px) !important;
+    margin: 12px 15px;
+    border: 1px solid #D6BCFA;
+    padding: 20px;
+    background-color: white;
+}
+
+.testimonialSection .grp .oneCard .userInfo{ 
+    display: flex;
+    align-items: center;
+    margin: 10px 1px;
+    gap: 2px;
+}
+.testimonialSection .grp .oneCard .userInfo .userName h6{
+    margin-bottom:0px!important;
+} 
+.testimonialSection .grp .oneCard .userInfo .userName p{
+    margin-bottom:0px!important;
+} 

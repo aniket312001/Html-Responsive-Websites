@@ -1,0 +1,90 @@
+@media screen and (max-width: 1000px) {
+    .mobile{
+        display: block;
+    }
+
+    .navlist1 , .navlist2{
+        display: none;
+    }
+
+    .navlist3{
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        top: 0;
+        left: -1003px;
+        position: fixed;
+        background-color: antiquewhite;
+        height: 100vh;
+        width: 100%;
+        padding: 25px 50px ;
+        transition: all 0.6s ease;
+    }
+
+    .navlist3.active{
+        left: 0;
+    }
+
+    .navlist3 .links{
+        padding: 1px 30px;
+    }
+
+    #closeMenu{
+        position: absolute;
+        right: 5%;
+    }
+
+
+
+    .logoSection{
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .navigation{
+        padding: 15px 20px;
+    }
+
+    .hero1{
+        position: absolute;
+        right: -30px;
+        top: 0;
+    }
+    .hero2{
+        position: absolute;
+        left: -30px;
+        top: 0;
+    }
+    .hero3{
+        position: absolute;
+        right: -90px;
+        bottom: 0;
+    }
+    .hero4{
+        position: absolute;
+        left: -120px;
+        bottom: 0;
+    }
+
+    .collectionSection .cardCollection .singleCard{
+        flex: 0 0 calc(100%/1 - 64px) !important;
+        margin: 12px 15px;
+      
+    }
+
+    .collectionSection .cardCollection .singleCard img{
+        /* height: 150px; */
+        width: 100%;
+    }
+    
+}

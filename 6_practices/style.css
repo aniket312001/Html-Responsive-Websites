@@ -1,0 +1,212 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    
+    color: white !important;
+    
+}
+
+/* utility */
+
+body{
+    position: relative;
+    overflow-x: hidden !important;
+    /* height: 100vh !important; */
+    /* overflow-y: auto; */
+    background-color: #2B2B2B !important;
+    
+}
+
+h1,h2,h3,h4,h5,p{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+a , li, ul{
+    text-decoration: none !important;
+    list-style: none;
+
+}
+
+.showdowHeader{
+    box-shadow: 1px 2px red;
+}
+
+.btn{
+    padding: 10px 20px !important;
+    background-color: #A259FF !important;
+}
+
+.btn img{
+    background-color: #A259FF !important;
+}
+
+
+.card{
+    position: inherit;}
+
+.relativePosition{
+    position: relative;
+}
+
+
+/* Header */
+header{
+    position:sticky;
+    top: 0;
+    background-color: #2B2B2B !important;
+}
+
+.navbar{
+    /* border: 1px solid white; */
+
+   
+}
+
+.menu{
+    display: none;
+}
+
+.showOption{
+    display: block !important;
+}
+
+.hideOption{
+    display: none !important;
+}
+
+.closeMenu{
+    font-size: large;
+}
+
+
+
+/* Hero Section */
+
+.heroSection{
+    /* border: 2px solid wheat; */
+    padding: 40px 100px !important;
+
+}
+
+.heroContent{
+    padding-top: 50px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.heroContent .AdditionalInfo{
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+
+.heroCard{
+    display: flex;
+    justify-content: center;
+
+}
+.heroCard .card{
+    position: inherit;
+    background-color:  #3B3B3B !important;
+    border-radius: 20px !important; 
+    width: 24rem;
+}
+
+.heroCard .card .card-body{
+
+    background-color:  #3B3B3B !important;
+    padding: 20px !important;
+}
+
+.heroCard .card .card-body .card-title { background-color:  #3B3B3B !important; }
+.heroCard .card .card-body .card-text { background-color:  #3B3B3B !important;}
+
+
+
+
+
+/* Trending Section  */
+
+.trendingSection{
+    /* border: 2px solid rgb(37, 255, 37); */
+    padding: 40px 100px !important;
+}
+
+.trendingImages{
+  
+}
+
+
+
+/* Creator  */
+
+.creatorSection{
+    /* border: 5px solid rgb(35, 48, 132); */
+    padding: 40px 100px !important;
+}
+
+/* .allCreatorsCard .card .card-body .cardImage .card-img-top{ background-color: #3B3B3B !important;}
+.allCreatorsCard .card .card-body { background-color: #3B3B3B !important;}
+.allCreatorsCard .card .card-body .card-title{ background-color: #3B3B3B !important;}
+.allCreatorsCard .card .card-body .card-text{ background-color: #3B3B3B !important;} */
+
+.allCreatorsCard .card{
+    text-align: center;
+    align-items: center;
+    width: 15rem;
+    padding: 20px !important;
+    background-color: #3B3B3B !important;
+    margin-top: 20px !important;
+}
+.allCreatorsCard .card .no{
+    position: relative;
+    top: -10px;
+    right: 84px;
+    padding: 5px 12px !important;
+    border-radius: 50% ;
+    background-color: #2B2B2B !important;
+}
+
+/* Category Section */
+.categorySection{
+    /* border: 5px solid rgb(180, 193, 61); */
+    padding: 40px 100px !important;
+}
+
+.allCategoryCard .card{
+    margin-top: 20px !important;
+    border-radius:20px;
+    background-color: #3B3B3B !important;
+}
+.allCategoryCard .card .card-body{
+  padding: 10px !important;
+}
+
+
+/* Weekly */
+.weeklySection{
+    /* border: 5px solid rgb(180, 193, 61); */
+    margin: 40px 100px !important;
+    background-color: #3B3B3B !important;
+}
+
+
+.inputEmail{
+    padding:9px !important;
+    width: 270px;
+}
+
+.joinBtn{
+    position: relative;
+    right: 22px;
+    bottom: 3px;
+    border-radius: 20px;
+    padding: 10px 30px !important;
+}

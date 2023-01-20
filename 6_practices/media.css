@@ -1,0 +1,142 @@
+@media screen and (max-width: 1000px) {
+    .menu{
+        display: block;
+    }
+
+    .navLinks{
+        transition: all 0.5s ease;
+        display: block!important;
+        position:absolute;
+        left: -4144px ;
+        z-index: 1000000 !important;
+        top: 65px;
+        height: calc(100vh - 60px);
+        width: 100%;
+        overflow: hidden;
+        padding: 70px 50px !important;
+        display: flex !important;
+        align-items: start !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+        background-color: #2B2B2B !important;
+    }
+
+    .navLinks.active{
+        left: 0;
+    }
+
+
+
+    .trendingSection{
+        padding: 20px 25px !important;
+    }
+    .trendingImages{
+        flex-wrap: wrap !important;
+    }
+    .creatorSection{
+        padding: 20px 15px !important;
+    }
+  
+
+    .allCreatorsCard .card{
+   
+        width: 18rem;
+        height: 100px;
+        padding: 10px !important;
+        background-color: #3B3B3B !important;
+        margin-top: 20px !important;
+        display: flex;
+        flex-direction: row;
+
+
+
+    }
+    .allCreatorsCard .card .no{
+       position: relative;
+       top: -23px;
+       right: -15px;
+       padding: 5px 12px !important;
+       border-radius: 50% ;
+       background-color: #2B2B2B !important;
+    }
+
+
+    .categorySection{
+        padding: 20px 15px !important;
+    }
+
+    .weeklySection{
+        margin: 0px !important;
+        background-color: #3B3B3B !important;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    #heroFlex{
+        flex-wrap:  wrap;
+    }
+
+    .heroSection{
+        padding: 20px 25px !important;
+    
+    }
+
+    
+    .heroCard .card{
+        margin-top: 20px !important;
+        order: 1;
+    }
+
+    .heroContent .mainText{
+       order: 2;
+    }
+
+    .heroContent .AdditionalInfo{
+       order: 3;
+    }
+    
+    
+    .inputEmail{
+        padding:9px !important;
+        width: 170px;
+    }
+
+    .joinBtn{
+        position: relative;
+        right: 12px;
+        bottom: 3px;
+        border-radius: 20px;
+        padding: 10px 20px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar{
+        padding: 1rem 12px !important;
+    }
+
+    .heroCard .card{
+        
+        background-color:  #3B3B3B !important;
+        border-radius: 20px !important; 
+        width: auto;
+    }
+
+    .trendingImages{
+        justify-content: center !important;
+    }
+    .allCreatorsCard {
+
+        justify-content: center !important;
+
+
+    }
+    .allCategoryCard {
+        justify-content: center !important;
+    }
+
+    .weeklyImage{
+        width: 100%;
+    }
+}

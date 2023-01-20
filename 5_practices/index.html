@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">LOGO</div>
+        <!-- <nav> -->
+
+            <ul id="sidebar" class="nav-grp ">
+                <li class="nav-links">blog</li>
+                <li class="nav-links">contact</li>
+                <li class="nav-links">about</li>
+                <li class="nav-search desktop">
+                    <i id="searchIcon" class="fa-solid fa-search " ></i>
+                    <input id="inputSearch" type="text" class="searchbar" placeholder="Search">
+                </li>
+                <li class="nav-search mobile">
+                    <input id="inputSearch" type="text" class="mobile-Search" placeholder="Search">
+                </li>
+                
+            </ul>
+        <!-- </nav> -->
+        <div id="menu" class="Hamburger"> <i id="mymenu" class="fa-solid fa-bars" ></i></div>    
+        <div id="close" class="closeBar"> <i id="mymenu2" class="fa-solid fa-times" ></i></div>    
+
+    </header>
+    
+
+    <section class="main">
+        <div class="bgShape">
+            <img src="./images/BG Shape.svg" alt="">
+        </div>
+
+        <div class="heroSection">
+            <div class="contain">
+                <h1>Hi, I’m Aniket</h1>
+                <h5>I design beautiful websites & mobile <br> apps that modern trends demand</h5>
+                <div>
+                    <button class="btn"> 
+                    Contact Me
+                    </button>
+                </div>
+
+                <div class="allLogos">
+                    <div><img src="./images/insta.svg" alt=""></div>
+                    <div><img src="./images/Rectangle (1).svg" alt=""></div>
+                    <div><img src="./images/Rectangle (2).svg" alt=""></div>
+                </div>
+            </div>
+            <div class="photo">
+                <img class="desktop" src="./images/Hero Image.png" alt="">
+                <img class="mobile" src="./images/singleImage.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        $(document).ready(function(){
+          $("#mymenu").click(function(){
+            $("#close").addClass('closeBar-active');
+            $("#menu").addClass('Hamburger-block');
+            $("#sidebar").addClass('active');
+          });
+          $("#mymenu2").click(function(){
+            $("#close").removeClass('closeBar-active');
+            $("#menu").removeClass('Hamburger-block');
+            $("#sidebar").removeClass('active');
+          });
+          $("#searchIcon").click(function(){
+            $("#searchIcon").toggleClass('fa-search fa-times');
+            $("#inputSearch").toggleClass('searchbar searchbar-active');
+       
+          });
+
+         
+        })
+    </script>
+
+</body>
+</html>
